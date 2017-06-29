@@ -1,66 +1,10 @@
 $Google-font: 'Roboto', sans-serif;
 $Google-font-condensed: 'Roboto Condensed', sans-serif;
 $Google-font-mono: 'Roboto Mono', monospace;;
+$Google-font-sans: 'Open Sans', sans-serif;
 $Color-font: #424242;
+$Color-grey: grey;
 $Space-top: 6vh;
-
-.grey {
-  color: grey;
-}
-
-.top {
-  margin-top: $Space-top;
-}
-
-.center {
-    text-align: center;
-}
-
-.right {
-    text-align: right;
-}
-
-.roboto {
-  font-family: $Google-font
-}
-
-div .gallery img {
-  width: 100%;
-}
-
-p {
-  line-height: 1.6;
-}
-
-.horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-hr {
-    border: 2px solid #4285F4;
-}
-
-.list-none {
-    list-style: none;
-}
-
-.list-none li {
-    padding-left: 4.5vh;
-    padding-right: 4.5vh;
-    padding-top: 0;
-    font-family: $Google-font-condensed;
-    margin: 0;
-}
-
-.mono-font {
-  font-family: $Google-font-mono;
-  color: grey;
-}
-.no-padding div div{
-  padding: 0;
-}
 
 *{
   box-sizing: border-box;
@@ -68,6 +12,7 @@ hr {
   padding: 0;
   font-family: $Google-font;
   color: $Color-font;
+  line-height: 1.6;
 }
 .container{
   width: 100%;
@@ -105,3 +50,88 @@ hr {
         margin-left: widthColumns($numColumns);
     }
 }
+
+.grey {
+  color: $Color-grey;
+}
+
+.top {
+  margin-top: $Space-top;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.roboto {
+  font-family: $Google-font;
+}
+
+.sans {
+  font-family: $Google-font-sans;
+}
+
+.mono-font {
+  font-family: $Google-font-mono;
+  color: $Color-grey;
+}
+
+.small-font-size {
+  font-size: .9em;
+}
+
+.medium-font-size {
+  font-size: 1.3em;
+}
+
+.gallery {
+    img {
+      width: 100%;
+    }
+}
+
+.image-fifty {
+    img {
+      width: 100%;
+    }
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+hr {
+    border: 2px solid #4285F4;
+}
+
+.box-text {
+  background-color: #F1F3F4;
+  padding: 3vh;
+}
+
+.list-none {
+  list-style: none;
+    li {
+      padding-left: 4.5vh;
+      padding-right: 4.5vh;
+      padding-top: 0;
+      font-family: $Google-font-condensed;
+      margin: 0;
+    }
+}
+
+.no-padding {
+  div {
+    div {
+      padding: 0;
+    }
+  }
+}
+
+
