@@ -1,5 +1,16 @@
 $Google-font: 'Roboto', sans-serif;
 $Google-font-condensed: 'Roboto Condensed', sans-serif;
+$Google-font-mono: 'Roboto Mono', monospace;;
+$Color-font: #424242;
+$Space-top: 6vh;
+
+.grey {
+  color: grey;
+}
+
+.top {
+  margin-top: $Space-top;
+}
 
 .center {
     text-align: center;
@@ -9,10 +20,26 @@ $Google-font-condensed: 'Roboto Condensed', sans-serif;
     text-align: right;
 }
 
+.roboto {
+  font-family: $Google-font
+}
+
+div .gallery img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.6;
+}
+
 .horizontal {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+hr {
+    border: 2px solid #4285F4;
 }
 
 .list-none {
@@ -20,8 +47,19 @@ $Google-font-condensed: 'Roboto Condensed', sans-serif;
 }
 
 .list-none li {
-    padding: 3vh;
+    padding-left: 4.5vh;
+    padding-right: 4.5vh;
+    padding-top: 0;
     font-family: $Google-font-condensed;
+    margin: 0;
+}
+
+.mono-font {
+  font-family: $Google-font-mono;
+  color: grey;
+}
+.no-padding div div{
+  padding: 0;
 }
 
 *{
@@ -29,6 +67,7 @@ $Google-font-condensed: 'Roboto Condensed', sans-serif;
   margin: 0;
   padding: 0;
   font-family: $Google-font;
+  color: $Color-font;
 }
 .container{
   width: 100%;
@@ -59,7 +98,7 @@ $Google-font-condensed: 'Roboto Condensed', sans-serif;
     .col-#{$numColumns}{
         width: widthColumns($numColumns);
     }
-} 
+}
 
 @for $numColumns from 1 through 12 {
     .col-#{$numColumns}-offset {

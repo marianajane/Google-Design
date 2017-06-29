@@ -1,26 +1,55 @@
+.grey {
+  color: grey; }
+
+.top {
+  margin-top: 6vh; }
+
 .center {
   text-align: center; }
 
 .right {
   text-align: right; }
 
+.roboto {
+  font-family: "Roboto", sans-serif; }
+
+div .gallery img {
+  width: 100%; }
+
+p {
+  line-height: 1.6; }
+
 .horizontal {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
+hr {
+  border: 2px solid #4285F4; }
+
 .list-none {
   list-style: none; }
 
 .list-none li {
-  padding: 3vh;
-  font-family: "Roboto Condensed", sans-serif; }
+  padding-left: 4.5vh;
+  padding-right: 4.5vh;
+  padding-top: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0; }
+
+.mono-font {
+  font-family: "Roboto Mono", monospace;
+  color: grey; }
+
+.no-padding div div {
+  padding: 0; }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #424242; }
 
 .container {
   width: 100%;
