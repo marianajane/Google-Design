@@ -122,19 +122,14 @@
 .medium-font-size {
   font-size: 1.3em; }
 
-.gallery img {
-  width: 100%; }
-
 .image-fifty img {
   width: 100%; }
 
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 hr {
   border: 2px solid #4285F4; }
+
+.special-hr {
+  border: 1.5px solid #EFEFEF; }
 
 .box-text {
   background-color: #F1F3F4;
@@ -149,7 +144,18 @@ hr {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0; }
 
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 .no-padding div div {
   padding: 0; }
+
+footer div {
+  font-size: .85em; }
+
+ul li {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */
